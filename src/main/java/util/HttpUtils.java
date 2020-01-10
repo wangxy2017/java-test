@@ -77,7 +77,7 @@ public class HttpUtils {
      * @param isHttps
      * @return
      */
-    public static String post(String url, String body, Map<String, String> headers, boolean isHttps) {
+    public static String postJson(String url, String body, Map<String, String> headers, boolean isHttps) {
         String result = "";
         TimeCounter.start();
         try {
@@ -98,7 +98,7 @@ public class HttpUtils {
         return result;
     }
 
-    public static String post(String url, Map<String, Object> params, Map<String, String> headers, boolean isHttps) {
+    public static String postFile(String url, Map<String, Object> params, Map<String, String> headers, boolean isHttps) {
         String result = "";
         TimeCounter.start();
         try {
